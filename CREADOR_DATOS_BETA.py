@@ -20,7 +20,7 @@ def datos_falsos():
 #x=pandas.Dataframe.from_dict(libros,orient="index")        =    Pandas diccionario
 
 def lenguage():
-    texto = input("¿Qué lenguaje de ingreso de datos en una DB? : ").lower()
+    texto = input("Tipo de formato de texto : ").lower()
     return texto
 
 #n (next) ejecuta la siguiente lienas de codigo( list and next sirven mucho para experimentar qur bucles esten bien)
@@ -75,20 +75,24 @@ if __name__ == "__main__":
         
         table = input("Nombre de la tabla : ")
         
-        if lenguage() in ["posgret", "posgrets", "plp", "plpgsql","post","mysql","sql"]:
+        final=lenguage()
+        breakpoint()
+
+        if final in ["posgret", "posgrets", "plp", "plpgsql","post","mysql","sql"]:
             count = cantidad_registros()
             tipo(table, count)
             print("Todo Copiado en el portapapeles exitosomamente")
             continuar = input("¿Desea generar más registros? (s/n): ").lower()
             if continuar != 's':
                 break
-        elif lenguage() in ["csv","cvs"]:
+        elif final in ["csv","cvs"]:
             count=cantidad_registros()
             generador_csv(count)
             print("Todo copia en portapapeles exitosamente")
             breakpoint()
         else:
             print("No disponible Aun :(")   
+
 
 
 #PUEDES VER TU PORTAPAPELES, ALLI SE ENCUENTRAN LOS REGISTROS QUE HICISTES
