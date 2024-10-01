@@ -65,6 +65,8 @@ def generador_csv(count):
         pyperclip.copy(datos_completo_csv_limpios)
 
 if __name__ == "__main__":
+
+
     while True:
         ascii_art = pyfiglet.figlet_format("Datos Faker 💻")
 
@@ -76,7 +78,6 @@ if __name__ == "__main__":
         table = input("Nombre de la tabla : ")
         
         final=lenguage()
-        breakpoint()
 
         if final in ["posgret", "posgrets", "plp", "plpgsql","post","mysql","sql"]:
             count = cantidad_registros()
@@ -89,7 +90,6 @@ if __name__ == "__main__":
             count=cantidad_registros()
             generador_csv(count)
             print("Todo copia en portapapeles exitosamente")
-            breakpoint()
         else:
             print("No disponible Aun :(")   
 
