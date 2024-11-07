@@ -7,9 +7,9 @@ Este script utiliza la librería **Faker** para generar datos falsos según la c
 - **Faker**: Genera datos de ejemplo como nombres, direcciones, correos electrónicos, etc.
 - **PyFiglet**: Permite generar texto ASCII estilizado para mejorar la presentación del script en la terminal.
   
-[!TIP]
-> Asegurate de tener instalado Python en tus sistema operativo y tener instalado virtualenv o anaconda para creacion de tu entorno virtual y aislar las dependencias
 
+> [!TIP]
+> Asegurate de tener instalado Python en tus sistema operativo y tener instalado virtualenv o anaconda para creacion de tu entorno virtual y aislar las dependencia.
 
 ## Uso
 - Instala las dependencias en el archivo requeriments.txt
